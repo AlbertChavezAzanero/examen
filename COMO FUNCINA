@@ -1,0 +1,16 @@
+ URLs del Microservicio msvc-users
+Este es el servicio que provee los datos y que ejecutas en dos puertos diferentes. Puedes probar estas URLs individualmente en tu navegador para ver que cada instancia responde.
+
+Instancia 1: http://localhost:8001/api/users
+
+Instancia 2: http://localhost:8002/api/users
+
+URL del Microservicio msvc-clients (La Principal)
+Este es el servicio que consume los datos y el que debes usar para la prueba final.
+
+URL para la prueba en Postman: http://localhost:8080/api/clients
+
+Cuando llamas a esta URL, msvc-clients internamente se comunica con una de las dos URLs de msvc-users (alternando entre ellas) para obtener los datos y procesarlos.
+
+PARA VER LOS USERS
+http://localhost:8080/
